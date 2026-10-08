@@ -59,7 +59,37 @@ header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(8,23,46,.
 .hero-visual{height:470px;position:relative;display:flex;align-items:center;justify-content:center}
 .hero-visual:before{content:"";position:absolute;width:80%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(79,255,213,.14),transparent 70%);filter:blur(30px)}
 .hero-symbol{font-size:clamp(7rem,18vw,16rem);font-family:"Space Grotesk";font-weight:700;color:rgba(79,255,213,.08);text-shadow:0 0 75px rgba(79,255,213,.2)}
-.hero-image{position:absolute;inset:0;background-position:center;background-size:cover;mask-image:linear-gradient(to right,transparent,black 40%,transparent 100%);opacity:.48}
+.hero-image {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  opacity: 0.65;
+
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 35%,
+    black 75%,
+    transparent 100%
+  );
+
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 35%,
+    black 75%,
+    transparent 100%
+  );
+
+  filter: brightness(0.65) contrast(1.1);
+}
 .tech-strip{display:flex;gap:25px;flex-wrap:wrap;justify-content:center;border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:15px;margin-top:60px;color:var(--muted);font-size:.77rem}
 .section-head{margin-bottom:35px}
 .section-head p{margin-top:5px}
@@ -188,7 +218,6 @@ footer{text-align:center;padding:25px;border-top:1px solid var(--border);font-si
     </div>
    </div>
    <div class="hero-visual">
-    <div class="hero-symbol">GG</div>
     <div class="hero-image" id="heroImage"></div>
    </div>
   </div>
@@ -315,7 +344,7 @@ const PORTFOLIO_CONFIG = {
  linkedin:"",
  resumePath:"",
  profileImagePath:"",
- heroImagePath:"",
+ heroImagePath:"Mypic.jpg",
  typing:[
   "Computer Engineering Student",
   "Aspiring Software Engineer",
