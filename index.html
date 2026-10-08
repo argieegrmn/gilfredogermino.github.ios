@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>[Your Name]  | Computer Engineering Student & Aspiring Software Engineer</title>
+<title>Gilfredo C. Germino Jr. | Computer Engineering Student &amp; Aspiring Software Engineer</title>
 <meta name="description" content="Portfolio of a 4th-year BS Computer Engineering student at ICCT Colleges Foundation Inc., Rizal, Philippines, focused on software engineering.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Gilfredo Germino Jr | Computer Engineering Student">
+<meta property="og:title" content="Gilfredo C. Germino Jr. | Computer Engineering Student">
 <meta property="og:description" content="Projects, skills and journey of an aspiring software engineer.">
 <meta property="og:image" content="og-image.png">
 <meta name="theme-color" content="#0a0f1c">
@@ -14,6 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Sora:wght@300;400;600;800&display=swap" rel="stylesheet">
+
 <style>
 :root{--bg:#0a0f1c;--bg2:#0f1729;--ink:#e6ecf8;--mute:#8a97b3;--line:rgba(148,170,220,.16);--glass:rgba(18,27,48,.62);--blue:#3b82f6;--cyan:#22d3ee;--violet:#8b5cf6;--sans:'Sora',system-ui,sans-serif;--mono:'JetBrains Mono',ui-monospace,Consolas,monospace}
 :root[data-theme=light]{--bg:#f4f6fb;--bg2:#e9eef8;--ink:#101a33;--mute:#53607e;--line:rgba(30,50,100,.16);--glass:rgba(255,255,255,.75);--blue:#2563eb;--cyan:#0891b2;--violet:#7c3aed}
@@ -49,6 +50,7 @@ h2{font:800 clamp(1.7rem,4vw,2.5rem)/1.15 var(--sans);letter-spacing:-.02em;marg
 .chip{padding:.4rem .9rem;border-radius:99px;border:1px solid var(--line);background:none;color:var(--mute);font:400 .82rem var(--sans);cursor:pointer}
 .chip[aria-pressed=true]{background:var(--blue);border-color:var(--blue);color:#fff}
 .grid{display:grid;gap:1.1rem;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+
 /* hero */
 #hero{display:grid;grid-template-columns:1.1fr .9fr;gap:2.5rem;align-items:center;min-height:calc(100vh - 60px);padding-top:3rem}
 @media(max-width:900px){#hero{grid-template-columns:1fr}}
@@ -70,14 +72,17 @@ h1{font:800 clamp(2.6rem,7vw,4.8rem)/1 var(--sans);letter-spacing:-.04em;margin:
 .tin{display:flex;gap:.5rem;padding:.6rem .9rem;border-top:1px solid rgba(255,255,255,.08)}
 .tin input{flex:1;background:none;border:0;color:inherit;font:inherit;outline:0}
 .ph{width:84px;height:84px;border-radius:18px;border:1px dashed var(--cyan);display:grid;place-items:center;font:.62rem var(--mono);color:var(--mute);text-align:center;margin-bottom:1rem}
+
 /* about */
 .ab{display:grid;grid-template-columns:1.4fr 1fr;gap:2rem}@media(max-width:800px){.ab{grid-template-columns:1fr}}
 .ab p{margin-bottom:1rem;color:var(--mute)}
 dl{display:grid;grid-template-columns:auto 1fr;gap:.6rem 1rem;font-size:.88rem}dt{color:var(--mute)}dd{font-weight:600}
+
 /* skills */
 .sk{display:flex;align-items:center;gap:.7rem;transition:.2s}.sk:hover{border-color:var(--cyan);transform:translateY(-3px)}
 .sk .ic{font:600 .75rem var(--mono);width:38px;height:38px;border-radius:10px;display:grid;place-items:center;background:var(--line);color:var(--cyan);flex:none}
 .sk small{display:block;color:var(--mute);font-size:.72rem}
+
 /* projects */
 .pj{padding:0;overflow:hidden;display:flex;flex-direction:column;transition:.25s}.pj:hover{transform:translateY(-4px);border-color:var(--blue)}
 .pv{height:130px;display:grid;place-items:center;font:600 .78rem var(--mono);color:rgba(255,255,255,.85);background:linear-gradient(135deg,var(--c1),var(--c2))}
@@ -86,14 +91,17 @@ dl{display:grid;grid-template-columns:auto 1fr;gap:.6rem 1rem;font-size:.88rem}d
 dialog{margin:auto;max-width:640px;width:calc(100% - 2rem);background:var(--bg2);color:var(--ink);border:1px solid var(--line);border-radius:16px;padding:1.5rem;max-height:88vh}
 dialog::backdrop{background:rgba(3,6,14,.7);backdrop-filter:blur(4px)}
 dialog h4{margin:1rem 0 .3rem;font-size:.9rem;color:var(--cyan)}dialog li{margin-left:1.2rem;color:var(--mute);font-size:.9rem}
+
 /* timeline */
 .tl{border-left:2px solid var(--line);margin-left:.5rem;padding-left:1.6rem;display:grid;gap:1.3rem}
 .tl>div{position:relative}.tl>div::before{content:"";position:absolute;left:-2.05rem;top:.5rem;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--cyan)}
 .tl .when{font:400 .78rem var(--mono);color:var(--cyan)}
 .ph-note{color:var(--mute);font-style:italic}
+
 /* github */
 .gh .card{display:flex;flex-direction:column;gap:.4rem}.gh a{text-decoration:none}.gh h3{font:600 .98rem var(--mono);color:var(--cyan)}.gh p{font-size:.85rem;color:var(--mute)}
 .msg{padding:1.2rem;border:1px dashed var(--line);border-radius:12px;color:var(--mute)}
+
 /* contact */
 .ct{display:grid;grid-template-columns:1fr 1.2fr;gap:2rem}@media(max-width:800px){.ct{grid-template-columns:1fr}}
 form{display:grid;gap:.9rem}label{font-size:.82rem;color:var(--mute);display:grid;gap:.3rem}
@@ -108,175 +116,683 @@ body.is404 main,body.is404 header,body.is404 footer{display:none}body.is404 #nf{
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;translate:0 0}#cur{display:none}}
 </style>
 </head>
+
 <body>
-<canvas id="bg" aria-hidden="true"></canvas><div id="prog"></div><div id="cur" aria-hidden="true"></div>
-<header><nav aria-label="Main">
-<a class="logo" href="#hero">&lt;YN /&gt;</a>
-<div class="links" id="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#journey">Journey</a><a href="#certs">Certifications</a><a href="#github">GitHub</a><a href="#contact">Contact</a></div>
-<button class="ib" id="theme" aria-label="Toggle light or dark theme">◐</button>
-<button class="ib" id="menu" aria-label="Open menu" aria-expanded="false">☰</button>
-</nav></header>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div id="prog"></div>
+<div id="cur" aria-hidden="true"></div>
+
+<header>
+  <nav aria-label="Main">
+    <a class="logo" href="#hero">&lt;GG /&gt;</a>
+    <div class="links" id="links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#journey">Journey</a>
+      <a href="#certs">Certifications</a>
+      <a href="#github">GitHub</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="ib" id="theme" aria-label="Toggle light or dark theme">◐</button>
+    <button class="ib" id="menu" aria-label="Open menu" aria-expanded="false">☰</button>
+  </nav>
+</header>
 
 <main>
-<section id="hero">
-<div>
-<div class="ph" role="img" aria-label="Profile photo placeholder">replace with<br>photo</div>
-<p class="hi">Hello, I'm</p>
-<h1 data-c="name">Gilfredo C. Germino Jr.</h1>
-<p class="role">Computer Engineering Student | Aspiring Software Engineer</p>
-<p class="rot" id="rot" aria-live="off"></p>
-<p style="color:var(--mute);max-width:52ch">I'm a 4th-year Computer Engineering student who likes building practical software and understanding the hardware it runs on. I'm looking for internship and entry-level software roles.</p>
-<div class="ctas"><a class="btn p" href="#projects">View My Projects</a><a class="btn" id="resume" href="resume.pdf" download>Download Resume</a><a class="btn" href="#contact">Contact Me</a></div>
-<div class="soc"><a data-c="gh" href="https://github.com/" target="_blank" rel="noopener">GitHub</a><a data-c="li" href="https://www.linkedin.com/in/" target="_blank" rel="noopener">LinkedIn</a><a data-c="mail" href="mailto:you@example.com">Email</a></div>
-</div>
-<div class="term" role="group" aria-label="Interactive terminal">
-<div class="tb"><i></i><i></i><i></i>&nbsp;visitor@portfolio ~ type "help"</div>
-<div id="out" tabindex="0" aria-live="polite"></div>
-<form class="tin" id="tf" autocomplete="off"><span style="color:var(--cyan)">$</span><input id="ti" aria-label="Terminal command" spellcheck="false" autocapitalize="off"></form>
-</div>
-</section>
+  <section id="hero">
+    <div>
+      <div class="ph" role="img" aria-label="Profile photo placeholder">replace with<br>photo</div>
+      <p class="hi">Hello, I'm</p>
+      <h1 data-c="name">Gilfredo C. Germino Jr.</h1>
+      <p class="role">Computer Engineering Student | Aspiring Software Engineer</p>
+      <p class="rot" id="rot" aria-live="off"></p>
+      <p style="color:var(--mute);max-width:52ch">I'm a 4th-year Computer Engineering student who likes building practical software and understanding the hardware it runs on. I'm looking for internship and entry-level software roles.</p>
+      <div class="ctas">
+        <a class="btn p" href="#projects">View My Projects</a>
+        <a class="btn" id="resume" href="resume.pdf" download>Download Resume</a>
+        <a class="btn" href="#contact">Contact Me</a>
+      </div>
+      <div class="soc">
+        <a data-c="gh" href="https://github.com/argieegrmn" target="_blank" rel="noopener">GitHub</a>
+        <a data-c="li" href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a>
+        <a data-c="mail" href="mailto:you@example.com">Email</a>
+      </div>
+    </div>
 
-<section id="about" class="rv"><h2>About me</h2><p class="sub">Software, hardware, and the space between them.</p>
-<div class="ab"><div>
-<p>I'm studying Computer Engineering at ICCT Colleges Foundation Inc. My coursework has me working with both code and circuits, from programming in Python, Java and C/C++ to Arduino projects and MATLAB/Simulink models.</p>
-<p>I enjoy turning an idea into something people can actually use, such as a mobile app that organizes a school tournament. I'm picking up new languages and frameworks as projects need them.</p>
-<p>My goal is to work as a professional software engineer, writing clear, maintainable code in a team that keeps learning. <span class="ph-note">[Edit this text to match your own voice.]</span></p>
-</div>
-<div class="card"><dl>
-<dt>Degree</dt><dd>BS in Computer Engineering</dd><dt>Year level</dt><dd>4th Year</dd><dt>University</dt><dd>ICCT Colleges Foundation Inc.</dd><dt>Location</dt><dd>Rizal, Philippines</dd><dt>Career interest</dt><dd>Software Engineering / Technology Development</dd></dl></div></div></section>
+    <div class="term" role="group" aria-label="Interactive terminal">
+      <div class="tb"><i></i><i></i><i></i>&nbsp;visitor@portfolio ~ type "help"</div>
+      <div id="out" tabindex="0" aria-live="polite"></div>
+      <form class="tin" id="tf" autocomplete="off">
+        <span style="color:var(--cyan)">$</span>
+        <input id="ti" aria-label="Terminal command" spellcheck="false" autocapitalize="off">
+      </form>
+    </div>
+  </section>
 
-<section id="skills" class="rv"><h2>Technical skills</h2><p class="sub">Tools I've worked with. Levels are left blank on purpose: set <code>level</code> for each skill in the SKILLS array to reflect your real experience.</p>
-<div class="chips" id="skf" role="group" aria-label="Filter skills"></div><div class="grid" id="skg"></div></section>
+  <section id="about" class="rv">
+    <h2>About me</h2>
+    <p class="sub">Software, hardware, and the space between them.</p>
+    <div class="ab">
+      <div>
+        <p>I'm studying Computer Engineering at ICCT Colleges Foundation Inc. My coursework has me working with both code and circuits, from programming in Python, Java and C/C++ to Arduino projects and MATLAB/Simulink models.</p>
+        <p>I enjoy turning an idea into something people can actually use, such as a mobile app that organizes a school tournament. I'm picking up new languages and frameworks as projects need them.</p>
+        <p>My goal is to work as a professional software engineer, writing clear, maintainable code in a team that keeps learning. <span class="ph-note">[Edit this text to match your own voice.]</span></p>
+      </div>
+      <div class="card">
+        <dl>
+          <dt>Degree</dt><dd>BS in Computer Engineering</dd>
+          <dt>Year level</dt><dd>4th Year</dd>
+          <dt>University</dt><dd>ICCT Colleges Foundation Inc.</dd>
+          <dt>Location</dt><dd>Rizal, Philippines</dd>
+          <dt>Career interest</dt><dd>Software Engineering / Technology Development</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
 
-<section id="projects" class="rv"><h2>Featured projects</h2><p class="sub">Each project shows its real status. Concepts are labeled as concepts.</p>
-<div class="chips" id="pjf" role="group" aria-label="Filter projects"></div><div class="grid" id="pjg"></div></section>
+  <section id="skills" class="rv">
+    <h2>Technical skills</h2>
+    <p class="sub">Tools I've worked with. Levels are left blank on purpose: set <code>level</code> for each skill in the SKILLS array to reflect your real experience.</p>
+    <div class="chips" id="skf" role="group" aria-label="Filter skills"></div>
+    <div class="grid" id="skg"></div>
+  </section>
 
-<section id="journey" class="rv"><h2>Education &amp; journey</h2><p class="sub">Edit the TIMELINE array to add real milestones.</p><div class="tl" id="tl"></div></section>
+  <section id="projects" class="rv">
+    <h2>Featured projects</h2>
+    <p class="sub">Each project shows its real status. Concepts are labeled as concepts.</p>
+    <div class="chips" id="pjf" role="group" aria-label="Filter projects"></div>
+    <div class="grid" id="pjg"></div>
+  </section>
 
-<section id="certs" class="rv"><h2>Certifications &amp; achievements</h2><p class="sub">Add only credentials you hold. Include a verification link when one exists.</p><div class="grid" id="cg"></div></section>
+  <section id="journey" class="rv">
+    <h2>Education &amp; journey</h2>
+    <p class="sub">Edit the TIMELINE array to add real milestones.</p>
+    <div class="tl" id="tl"></div>
+  </section>
 
-<section id="github" class="rv gh"><h2>GitHub activity</h2><p class="sub">Public repositories pulled live from the GitHub API.</p><div class="grid" id="ghg"></div></section>
+  <section id="certs" class="rv">
+    <h2>Certifications &amp; achievements</h2>
+    <p class="sub">Add only credentials you hold. Include a verification link when one exists.</p>
+    <div class="grid" id="cg"></div>
+  </section>
 
-<section id="contact" class="rv"><h2>Contact me</h2><p class="sub">Open to internships and entry-level software roles.</p>
-<div class="ct"><div class="card"><dl><dt>Email</dt><dd><a data-c="mail" href="mailto:you@example.com">you@example.com</a></dd><dt>GitHub</dt><dd><a data-c="gh" href="https://github.com/" target="_blank" rel="noopener">github.com/username</a></dd><dt>LinkedIn</dt><dd><a data-c="li" href="https://www.linkedin.com/in/" target="_blank" rel="noopener">linkedin.com/in/username</a></dd><dt>Location</dt><dd>Rizal, Philippines</dd><dt>Resume</dt><dd><a href="resume.pdf" download>Download PDF</a></dd></dl></div>
-<form id="cf" novalidate><label>Name<input name="name" required autocomplete="name"><span class="err"></span></label>
-<label>Email<input name="email" type="email" required autocomplete="email"><span class="err"></span></label>
-<label>Message<textarea name="message" rows="5" required minlength="10"></textarea><span class="err"></span></label>
-<button class="btn p" type="submit">Send message</button><p id="fs" role="status" class="sub" style="margin:0"></p></form></div></section>
+  <section id="github" class="rv gh">
+    <h2>GitHub activity</h2>
+    <p class="sub">Public repositories pulled live from the GitHub API.</p>
+    <div class="grid" id="ghg"></div>
+  </section>
+
+  <section id="contact" class="rv">
+    <h2>Contact me</h2>
+    <p class="sub">Open to internships and entry-level software roles.</p>
+    <div class="ct">
+      <div class="card">
+        <dl>
+          <dt>Email</dt>
+          <dd><a data-c="mail" href="mailto:you@example.com">you@example.com (placeholder)</a></dd>
+          <dt>GitHub</dt>
+          <dd><a data-c="gh" href="https://github.com/argieegrmn" target="_blank" rel="noopener">github.com/argieegrmn</a></dd>
+          <dt>LinkedIn</dt>
+          <dd><a data-c="li" href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">linkedin.com/in/your-handle (placeholder)</a></dd>
+          <dt>Location</dt><dd>Rizal, Philippines</dd>
+          <dt>Resume</dt><dd><a href="resume.pdf" download>Download PDF</a></dd>
+        </dl>
+      </div>
+
+      <form id="cf" novalidate>
+        <label>Name
+          <input name="name" required autocomplete="name">
+          <span class="err"></span>
+        </label>
+        <label>Email
+          <input name="email" type="email" required autocomplete="email">
+          <span class="err"></span>
+        </label>
+        <label>Message
+          <textarea name="message" rows="5" required minlength="10"></textarea>
+          <span class="err"></span>
+        </label>
+        <button class="btn p" type="submit">Send message</button>
+        <p id="fs" role="status" class="sub" style="margin:0"></p>
+      </form>
+    </div>
+  </section>
 </main>
-<footer>Built with HTML, CSS and JavaScript. <span data-c="name">Your Name</span> © <span id="yr"></span></footer>
 
-<div id="nf"><div><h1>404</h1><p class="role">Segmentation fault: this page isn't in memory.</p><p class="sub" style="margin:1rem auto">The section you asked for doesn't exist.</p><a class="btn p" href="#hero" id="back">Return to main()</a></div></div>
+<footer>
+  Built with HTML, CSS and JavaScript.
+  <span data-c="name">Gilfredo C. Germino Jr.</span> © <span id="yr"></span>
+</footer>
+
+<div id="nf">
+  <div>
+    <h1>404</h1>
+    <p class="role">Segmentation fault: this page isn't in memory.</p>
+    <p class="sub" style="margin:1rem auto">The section you asked for doesn't exist.</p>
+    <a class="btn p" href="#hero" id="back">Return to main()</a>
+  </div>
+</div>
+
 <dialog id="dlg" aria-labelledby="dt"></dialog>
 
 <script>
 /* ===== EDIT YOUR DETAILS HERE ===== */
-const CFG={name:"Your Name",email:"you@example.com",github:"",linkedin:"https://www.linkedin.com/in/your-handle",
- formEndpoint:"" /* paste a Formspree URL, e.g. https://formspree.io/f/xxxx; if empty, the form opens your email app */,
- roles:["Software engineering","Mobile apps with Flutter","Embedded systems & Arduino","Learning something new every semester"]};
+
+// Replace the placeholder email and LinkedIn URL with your real details before publishing.
+const CFG={
+  name:"Gilfredo C. Germino Jr.",
+  email:"you@example.com",
+  github:"argieegrmn",
+  linkedin:"https://www.linkedin.com/in/your-handle",
+  formEndpoint:"", /* paste a Formspree URL, e.g. https://formspree.io/f/xxxx; if empty, the form opens your email app */
+  roles:[
+    "Software engineering",
+    "Mobile apps with Flutter",
+    "Embedded systems & Arduino",
+    "Learning something new every semester"
+  ]
+};
+
 const SKILLS=[
-["Languages","Python"],["Languages","Java"],["Languages","C / C++"],["Languages","Dart"],["Languages","JavaScript"],["Languages","HTML / CSS"],
-["Frameworks","Flutter"],["Frameworks","React"],["Frameworks","Firebase"],["Frameworks","Git / GitHub"],
-["Database & Backend","Cloud Firestore"],["Database & Backend","SQL"],["Database & Backend","Firebase Authentication"],
-["Dev Tools","Visual Studio Code"],["Dev Tools","Android Studio"],["Dev Tools","MATLAB / Simulink"],["Dev Tools","AutoCAD"],["Dev Tools","Arduino IDE"]
+  ["Languages","Python"],["Languages","Java"],["Languages","C / C++"],
+  ["Languages","Dart"],["Languages","JavaScript"],["Languages","HTML / CSS"],
+  ["Frameworks","Flutter"],["Frameworks","React"],["Frameworks","Firebase"],
+  ["Frameworks","Git / GitHub"],
+  ["Database & Backend","Cloud Firestore"],["Database & Backend","SQL"],
+  ["Database & Backend","Firebase Authentication"],
+  ["Dev Tools","Visual Studio Code"],["Dev Tools","Android Studio"],
+  ["Dev Tools","MATLAB / Simulink"],["Dev Tools","AutoCAD"],["Dev Tools","Arduino IDE"]
 ].map(([cat,name])=>({cat,name,level:""})); // level e.g. "Learning", "Comfortable", "Used in a project"
+
 const PROJECTS=[
-{t:"Contest Drive",st:"Concept",cat:["Mobile","Academic"],c:["#2563eb","#8b5cf6"],d:"A rule-based tournament management system for school competitions at ICCT.",tech:["Flutter","Dart","Firebase","Cloud Firestore"],
- feat:["Manage competitions and participants","Match schedules and brackets","Score entry and rankings"],obj:"Help organizers run school tournaments without spreadsheets.",chal:"[Describe a real challenge you faced]",proc:"[Describe your process: research, design, build, test]",repo:"",demo:""},
-{t:"TaraNa! Rizal Tourism & Heritage Guide",st:"Concept",cat:["Mobile","Academic"],c:["#0891b2","#2563eb"],d:"A tourism app concept for discovering destinations and heritage sites in Rizal.",tech:["Flutter","Dart","Firebase"],
- feat:["Browse destinations and heritage sites","[Add your planned features]"],obj:"Make Rizal's destinations and cultural sites easy to discover.",chal:"[Describe a real challenge]",proc:"[Describe your process]",repo:"",demo:""},
-{t:"Your Next Project",st:"Concept",cat:["Hardware","Academic"],c:["#334155","#475569"],d:"Placeholder for an Arduino or embedded systems prototype.",tech:["Arduino IDE","C / C++"],feat:["[Add features]"],obj:"[Add objective]",chal:"[Add challenge]",proc:"[Add process]",repo:"",demo:""},
-{t:"Your Next Software Project",st:"Concept",cat:["Software"],c:["#4c1d95","#1e3a8a"],d:"Placeholder for a Python, Java or web application.",tech:["Python"],feat:["[Add features]"],obj:"[Add objective]",chal:"[Add challenge]",proc:"[Add process]",repo:"",demo:""}];
+  {
+    t:"Contest Drive",
+    st:"Concept",
+    cat:["Mobile","Academic"],
+    c:["#2563eb","#8b5cf6"],
+    d:"A rule-based tournament management system for school competitions at ICCT.",
+    tech:["Flutter","Dart","Firebase","Cloud Firestore"],
+    feat:["Manage competitions and participants","Match schedules and brackets","Score entry and rankings"],
+    obj:"Help organizers run school tournaments without spreadsheets.",
+    chal:"[Describe a real challenge you faced]",
+    proc:"[Describe your process: research, design, build, test]",
+    repo:"",
+    demo:""
+  },
+  {
+    t:"TaraNa! Rizal Tourism & Heritage Guide",
+    st:"Concept",
+    cat:["Mobile","Academic"],
+    c:["#0891b2","#2563eb"],
+    d:"A tourism app concept for discovering destinations and heritage sites in Rizal.",
+    tech:["Flutter","Dart","Firebase"],
+    feat:["Browse destinations and heritage sites","[Add your planned features]"],
+    obj:"Make Rizal's destinations and cultural sites easy to discover.",
+    chal:"[Describe a real challenge]",
+    proc:"[Describe your process]",
+    repo:"",
+    demo:""
+  },
+  {
+    t:"Your Next Project",
+    st:"Concept",
+    cat:["Hardware","Academic"],
+    c:["#334155","#475569"],
+    d:"Placeholder for an Arduino or embedded systems prototype.",
+    tech:["Arduino IDE","C / C++"],
+    feat:["[Add features]"],
+    obj:"[Add objective]",
+    chal:"[Add challenge]",
+    proc:"[Add process]",
+    repo:"",
+    demo:""
+  },
+  {
+    t:"Your Next Software Project",
+    st:"Concept",
+    cat:["Software"],
+    c:["#4c1d95","#1e3a8a"],
+    d:"Placeholder for a Python, Java or web application.",
+    tech:["Python"],
+    feat:["[Add features]"],
+    obj:"[Add objective]",
+    chal:"[Add challenge]",
+    proc:"[Add process]",
+    repo:"",
+    demo:""
+  }
+];
+
 // status: "Concept" | "In Development" | "Completed"
+
 const TIMELINE=[
-{w:"[Start year]",t:"BS Computer Engineering, ICCT Colleges Foundation Inc.",d:"Began my degree in Rizal, Philippines."},
-{w:"[Year]",t:"Programming foundations",d:"[Add languages and courses you completed]"},
-{w:"[Year]",t:"Hardware and embedded coursework",d:"[Add the courses or lab work you did]"},
-{w:"Present",t:"4th year: building projects like Contest Drive",d:"Working on projects and preparing for internship and entry-level roles."},
-{w:"Next",t:"Career goal",d:"Become a professional software engineer."}];
-const CERTS=[{t:"[Certificate or seminar title]",o:"[Issuer]",y:"[Year]",link:""},{t:"[Academic recognition, if any]",o:"[Issuer]",y:"[Year]",link:""}];
+  {w:"[Start year]",t:"BS Computer Engineering, ICCT Colleges Foundation Inc.",d:"Began my degree in Rizal, Philippines."},
+  {w:"[Year]",t:"Programming foundations",d:"[Add languages and courses you completed]"},
+  {w:"[Year]",t:"Hardware and embedded coursework",d:"[Add the courses or lab work you did]"},
+  {w:"Present",t:"4th year: building projects like Contest Drive",d:"Working on projects and preparing for internship and entry-level roles."},
+  {w:"Next",t:"Career goal",d:"Become a professional software engineer."}
+];
+
+const CERTS=[
+  {t:"[Certificate or seminar title]",o:"[Issuer]",y:"[Year]",link:""},
+  {t:"[Academic recognition, if any]",o:"[Issuer]",y:"[Year]",link:""}
+];
+
 /* ===== END EDITABLE ===== */
-const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+
+const $=(s,r=document)=>r.querySelector(s);
+const $$=(s,r=document)=>[...r.querySelectorAll(s)];
 const reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
 /* config -> DOM */
-$$('[data-c=name]').forEach(e=>e.textContent=CFG.name);document.title=CFG.name+" | Computer Engineering Student & Aspiring Software Engineer";
-$$('[data-c=mail]').forEach(a=>{a.href="mailto:"+CFG.email;if(a.tagName==="A"&&a.closest("#contact"))a.textContent=CFG.email});
-$$('[data-c=gh]').forEach(a=>{if(CFG.github)a.href="https://github.com/"+CFG.github});
-$$('[data-c=li]').forEach(a=>a.href=CFG.linkedin);$("#yr").textContent=new Date().getFullYear();
+$$('[data-c=name]').forEach(e=>e.textContent=CFG.name);
+document.title=CFG.name+" | Computer Engineering Student & Aspiring Software Engineer";
+
+$$('[data-c=mail]').forEach(a=>{
+  a.href="mailto:"+CFG.email;
+  if(a.tagName==="A"&&a.closest("#contact")){
+    a.textContent=CFG.email+" (placeholder)";
+  }
+});
+
+$$('[data-c=gh]').forEach(a=>{
+  if(CFG.github)a.href="https://github.com/"+CFG.github;
+});
+
+$$('[data-c=li]').forEach(a=>a.href=CFG.linkedin);
+$("#yr").textContent=new Date().getFullYear();
+
 /* theme */
 const root=document.documentElement;
-try{const t=localStorage.getItem("theme");if(t)root.dataset.theme=t}catch(e){}
-$("#theme").onclick=()=>{const n=root.dataset.theme==="light"?"dark":"light";root.dataset.theme=n;try{localStorage.setItem("theme",n)}catch(e){}};
-$("#menu").onclick=e=>{const o=$("#links").classList.toggle("open");e.currentTarget.setAttribute("aria-expanded",o)};
-$("#links").onclick=e=>{if(e.target.tagName==="A"){$("#links").classList.remove("open");$("#menu").setAttribute("aria-expanded",false)}};
+try{
+  const t=localStorage.getItem("theme");
+  if(t)root.dataset.theme=t;
+}catch(e){}
+
+$("#theme").onclick=()=>{
+  const n=root.dataset.theme==="light"?"dark":"light";
+  root.dataset.theme=n;
+  try{localStorage.setItem("theme",n)}catch(e){}
+};
+
+$("#menu").onclick=e=>{
+  const o=$("#links").classList.toggle("open");
+  e.currentTarget.setAttribute("aria-expanded",o);
+};
+
+$("#links").onclick=e=>{
+  if(e.target.tagName==="A"){
+    $("#links").classList.remove("open");
+    $("#menu").setAttribute("aria-expanded",false);
+  }
+};
+
 /* rotating text */
-(()=>{const el=$("#rot");let i=0,j=0,del=false;if(reduce){el.textContent=CFG.roles[0];return}
-(function tick(){const w=CFG.roles[i];j+=del?-1:1;el.textContent=w.slice(0,j);let d=del?35:70;
-if(!del&&j===w.length){del=true;d=1400}else if(del&&j===0){del=false;i=(i+1)%CFG.roles.length;d=300}setTimeout(tick,d)})()})();
+(()=>{
+  const el=$("#rot");
+  let i=0,j=0,del=false;
+  if(reduce){
+    el.textContent=CFG.roles[0];
+    return;
+  }
+  (function tick(){
+    const w=CFG.roles[i];
+    j+=del?-1:1;
+    el.textContent=w.slice(0,j);
+    let d=del?35:70;
+    if(!del&&j===w.length){
+      del=true;
+      d=1400;
+    }else if(del&&j===0){
+      del=false;
+      i=(i+1)%CFG.roles.length;
+      d=300;
+    }
+    setTimeout(tick,d);
+  })();
+})();
+
 /* skills */
-function chips(box,items,cb){box.innerHTML=["All",...items].map((c,i)=>`<button class="chip" aria-pressed="${i===0}">${esc(c)}</button>`).join("");
-box.onclick=e=>{const b=e.target.closest("button");if(!b)return;$$("button",box).forEach(x=>x.setAttribute("aria-pressed",x===b));cb(b.textContent)}}
-function drawSkills(f="All"){$("#skg").innerHTML=SKILLS.filter(s=>f==="All"||s.cat===f).map(s=>`<div class="card sk"><span class="ic" aria-hidden="true">${esc(s.name.replace(/[^A-Za-z+]/g,"").slice(0,2))}</span><div>${esc(s.name)}<small>${esc(s.level||s.cat)}</small></div></div>`).join("")}
-chips($("#skf"),[...new Set(SKILLS.map(s=>s.cat))],drawSkills);drawSkills();
+function chips(box,items,cb){
+  box.innerHTML=["All",...items].map((c,i)=>
+    `<button class="chip" aria-pressed="${i===0}">${esc(c)}</button>`
+  ).join("");
+
+  box.onclick=e=>{
+    const b=e.target.closest("button");
+    if(!b)return;
+    $$("button",box).forEach(x=>x.setAttribute("aria-pressed",x===b));
+    cb(b.textContent);
+  };
+}
+
+function drawSkills(f="All"){
+  $("#skg").innerHTML=SKILLS.filter(s=>f==="All"||s.cat===f).map(s=>
+    `<div class="card sk">
+      <span class="ic" aria-hidden="true">${esc(s.name.replace(/[^A-Za-z+]/g,"").slice(0,2))}</span>
+      <div>${esc(s.name)}<small>${esc(s.level||s.cat)}</small></div>
+    </div>`
+  ).join("");
+}
+
+chips($("#skf"),[...new Set(SKILLS.map(s=>s.cat))],drawSkills);
+drawSkills();
+
 /* projects */
 const stc=s=>s==="Completed"?"done":s==="In Development"?"dev":"";
-function drawProj(f="All"){$("#pjg").innerHTML=PROJECTS.map((p,i)=>({p,i})).filter(({p})=>f==="All"||p.cat.includes(f)).map(({p,i})=>`<article class="card pj"><div class="pv" style="--c1:${p.c[0]};--c2:${p.c[1]}">preview image</div><div class="pb"><span><span class="tag st ${stc(p.st)}">${esc(p.st)}</span></span><h3>${esc(p.t)}</h3><p>${esc(p.d)}</p><div>${p.tech.map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div><button class="btn" data-i="${i}">View project details</button></div></article>`).join("")||'<p class="msg">No projects in this category yet.</p>'}
-chips($("#pjf"),["Software","Hardware","Mobile","Academic"],drawProj);drawProj();
-$("#pjg").onclick=e=>{const b=e.target.closest("[data-i]");if(!b)return;const p=PROJECTS[b.dataset.i],d=$("#dlg");
-const L=(a,l)=>a?`<a class="btn" href="${esc(a)}" target="_blank" rel="noopener">${l}</a>`:`<span class="tag">${l}: not available yet</span>`;
-d.innerHTML=`<div class="pv" style="--c1:${p.c[0]};--c2:${p.c[1]};border-radius:10px">screenshots go here</div><h3 id="dt" style="margin-top:1rem">${esc(p.t)}</h3><span class="tag st ${stc(p.st)}">${esc(p.st)}</span><p style="color:var(--mute)">${esc(p.d)}</p><h4>Objective</h4><p style="color:var(--mute);font-size:.9rem">${esc(p.obj)}</p><h4>Key features</h4><ul>${p.feat.map(f=>`<li>${esc(f)}</li>`).join("")}</ul><h4>Technologies</h4>${p.tech.map(t=>`<span class="tag">${esc(t)}</span>`).join("")}<h4>Challenges</h4><p style="color:var(--mute);font-size:.9rem">${esc(p.chal)}</p><h4>Development process</h4><p style="color:var(--mute);font-size:.9rem">${esc(p.proc)}</p><div style="display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1.2rem">${L(p.repo,"GitHub repo")}${L(p.demo,"Live demo")}<button class="btn" id="cl">Close</button></div>`;
-d.showModal();$("#cl").onclick=()=>d.close()};
-$("#dlg").onclick=e=>{if(e.target===e.currentTarget)e.currentTarget.close()};
+
+function drawProj(f="All"){
+  $("#pjg").innerHTML=PROJECTS.map((p,i)=>({p,i}))
+    .filter(({p})=>f==="All"||p.cat.includes(f))
+    .map(({p,i})=>
+      `<article class="card pj">
+        <div class="pv" style="--c1:${p.c[0]};--c2:${p.c[1]}">preview image</div>
+        <div class="pb">
+          <span><span class="tag st ${stc(p.st)}">${esc(p.st)}</span></span>
+          <h3>${esc(p.t)}</h3>
+          <p>${esc(p.d)}</p>
+          <div>${p.tech.map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div>
+          <button class="btn" data-i="${i}">View project details</button>
+        </div>
+      </article>`
+    ).join("")||'<p class="msg">No projects in this category yet.</p>';
+}
+
+chips($("#pjf"),["Software","Hardware","Mobile","Academic"],drawProj);
+drawProj();
+
+$("#pjg").onclick=e=>{
+  const b=e.target.closest("[data-i]");
+  if(!b)return;
+  const p=PROJECTS[b.dataset.i],d=$("#dlg");
+
+  const L=(a,l)=>a
+    ?`<a class="btn" href="${esc(a)}" target="_blank" rel="noopener">${l}</a>`
+    :`<span class="tag">${l}: not available yet</span>`;
+
+  d.innerHTML=`
+    <div class="pv" style="--c1:${p.c[0]};--c2:${p.c[1]};border-radius:10px">screenshots go here</div>
+    <h3 id="dt" style="margin-top:1rem">${esc(p.t)}</h3>
+    <span class="tag st ${stc(p.st)}">${esc(p.st)}</span>
+    <p style="color:var(--mute)">${esc(p.d)}</p>
+    <h4>Objective</h4>
+    <p style="color:var(--mute);font-size:.9rem">${esc(p.obj)}</p>
+    <h4>Key features</h4>
+    <ul>${p.feat.map(f=>`<li>${esc(f)}</li>`).join("")}</ul>
+    <h4>Technologies</h4>
+    ${p.tech.map(t=>`<span class="tag">${esc(t)}</span>`).join("")}
+    <h4>Challenges</h4>
+    <p style="color:var(--mute);font-size:.9rem">${esc(p.chal)}</p>
+    <h4>Development process</h4>
+    <p style="color:var(--mute);font-size:.9rem">${esc(p.proc)}</p>
+    <div style="display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1.2rem">
+      ${L(p.repo,"GitHub repo")}
+      ${L(p.demo,"Live demo")}
+      <button class="btn" id="cl">Close</button>
+    </div>`;
+
+  d.showModal();
+  $("#cl").onclick=()=>d.close();
+};
+
+$("#dlg").onclick=e=>{
+  if(e.target===e.currentTarget)e.currentTarget.close();
+};
+
 /* timeline, certs */
-$("#tl").innerHTML=TIMELINE.map(t=>`<div><span class="when">${esc(t.w)}</span><h3 style="font-size:1rem">${esc(t.t)}</h3><p style="color:var(--mute);font-size:.9rem">${esc(t.d)}</p></div>`).join("");
-$("#cg").innerHTML=CERTS.map(c=>`<div class="card"><span class="tag">${esc(c.y)}</span><h3 style="font-size:1rem;margin:.4rem 0">${esc(c.t)}</h3><p style="color:var(--mute);font-size:.85rem">${esc(c.o)}</p>${c.link?`<a href="${esc(c.link)}" target="_blank" rel="noopener" class="tag st">Verify</a>`:""}</div>`).join("");
+$("#tl").innerHTML=TIMELINE.map(t=>
+  `<div>
+    <span class="when">${esc(t.w)}</span>
+    <h3 style="font-size:1rem">${esc(t.t)}</h3>
+    <p style="color:var(--mute);font-size:.9rem">${esc(t.d)}</p>
+  </div>`
+).join("");
+
+$("#cg").innerHTML=CERTS.map(c=>
+  `<div class="card">
+    <span class="tag">${esc(c.y)}</span>
+    <h3 style="font-size:1rem;margin:.4rem 0">${esc(c.t)}</h3>
+    <p style="color:var(--mute);font-size:.85rem">${esc(c.o)}</p>
+    ${c.link?`<a href="${esc(c.link)}" target="_blank" rel="noopener" class="tag st">Verify</a>`:""}
+  </div>`
+).join("");
+
 /* github */
-(async()=>{const g=$("#ghg");if(!CFG.github){g.innerHTML='<p class="msg">Set <code>github</code> in CFG to show your public repositories here.</p>';return}
-g.innerHTML='<p class="msg">Loading repositories…</p>';
-try{const r=await fetch(`https://api.github.com/users/${encodeURIComponent(CFG.github)}/repos?sort=updated&per_page=6`);if(!r.ok)throw new Error(r.status);
-const a=(await r.json()).filter(x=>!x.fork);if(!a.length){g.innerHTML='<p class="msg">No public repositories yet.</p>';return}
-g.innerHTML=a.map(x=>`<a class="card" href="${esc(x.html_url)}" target="_blank" rel="noopener"><h3>${esc(x.name)}</h3><p>${esc(x.description||"No description")}</p><span class="tag">${esc(x.language||"n/a")}</span></a>`).join("")}
-catch(e){g.innerHTML='<p class="msg">Couldn\'t load repositories (GitHub may be rate-limiting). Visit the profile directly instead.</p>'}})();
+(async()=>{
+  const g=$("#ghg");
+  if(!CFG.github){
+    g.innerHTML='<p class="msg">Set <code>github</code> in CFG to show your public repositories here.</p>';
+    return;
+  }
+
+  g.innerHTML='<p class="msg">Loading repositories…</p>';
+
+  try{
+    const r=await fetch(`https://api.github.com/users/${encodeURIComponent(CFG.github)}/repos?sort=updated&per_page=6`);
+    if(!r.ok)throw new Error(r.status);
+
+    const a=(await r.json()).filter(x=>!x.fork);
+    if(!a.length){
+      g.innerHTML='<p class="msg">No public repositories yet.</p>';
+      return;
+    }
+
+    g.innerHTML=a.map(x=>
+      `<a class="card" href="${esc(x.html_url)}" target="_blank" rel="noopener">
+        <h3>${esc(x.name)}</h3>
+        <p>${esc(x.description||"No description")}</p>
+        <span class="tag">${esc(x.language||"n/a")}</span>
+      </a>`
+    ).join("");
+  }catch(e){
+    g.innerHTML='<p class="msg">Couldn\'t load repositories (GitHub may be rate-limiting). Visit the profile directly instead.</p>';
+  }
+})();
+
 /* contact */
-$("#cf").onsubmit=async e=>{e.preventDefault();const f=e.target,fs=$("#fs");let ok=true;
-$$("input,textarea",f).forEach(i=>{const bad=!i.value.trim()||!i.checkValidity();i.setAttribute("aria-invalid",bad);i.nextElementSibling.textContent=bad?(i.type==="email"?"Enter a valid email address.":"This field is required"+(i.minLength>0?" (min "+i.minLength+" characters).":".")):"";if(bad)ok=false});
-if(!ok)return;const d=Object.fromEntries(new FormData(f));
-if(CFG.formEndpoint){try{const r=await fetch(CFG.formEndpoint,{method:"POST",headers:{Accept:"application/json","Content-Type":"application/json"},body:JSON.stringify(d)});if(!r.ok)throw 0;fs.textContent="Message sent. Thank you!";f.reset()}catch(x){fs.textContent="Sending failed. Email me directly at "+CFG.email}}
-else{location.href=`mailto:${CFG.email}?subject=${encodeURIComponent("Portfolio message from "+d.name)}&body=${encodeURIComponent(d.message+"\n\nFrom: "+d.name+" ("+d.email+")")}`;fs.textContent="Opening your email app. (No form service is configured, so this uses an email fallback.)"}};
+$("#cf").onsubmit=async e=>{
+  e.preventDefault();
+  const f=e.target,fs=$("#fs");
+  let ok=true;
+
+  $$("input,textarea",f).forEach(i=>{
+    const bad=!i.value.trim()||!i.checkValidity();
+    i.setAttribute("aria-invalid",bad);
+    i.nextElementSibling.textContent=bad
+      ?(i.type==="email"
+        ?"Enter a valid email address."
+        :"This field is required"+(i.minLength>0?" (min "+i.minLength+" characters).":"."))
+      :"";
+    if(bad)ok=false;
+  });
+
+  if(!ok)return;
+  const d=Object.fromEntries(new FormData(f));
+
+  if(CFG.formEndpoint){
+    try{
+      const r=await fetch(CFG.formEndpoint,{
+        method:"POST",
+        headers:{Accept:"application/json","Content-Type":"application/json"},
+        body:JSON.stringify(d)
+      });
+      if(!r.ok)throw 0;
+      fs.textContent="Message sent. Thank you!";
+      f.reset();
+    }catch(x){
+      fs.textContent="Sending failed. Email me directly at "+CFG.email;
+    }
+  }else{
+    location.href=`mailto:${CFG.email}?subject=${encodeURIComponent("Portfolio message from "+d.name)}&body=${encodeURIComponent(d.message+"\n\nFrom: "+d.name+" ("+d.email+")")}`;
+    fs.textContent="Opening your email app. (No form service is configured, so this uses an email fallback.)";
+  }
+};
+
 /* terminal */
-const out=$("#out"),hist=[];let hi=0;
-const say=(t,h)=>{const d=document.createElement("div");h?d.innerHTML=t:d.textContent=t;out.append(d);out.scrollTop=out.scrollHeight};
-const CMD={help:()=>"Commands: about, skills, projects, contact, theme, clear",
-about:()=>CFG.name+": 4th-year BS Computer Engineering student, ICCT Colleges Foundation Inc., Rizal. Interested in software engineering.",
-skills:()=>[...new Set(SKILLS.map(s=>s.cat))].map(c=>c+": "+SKILLS.filter(s=>s.cat===c).map(s=>s.name).join(", ")).join("\n"),
-projects:()=>PROJECTS.map(p=>"- "+p.t+" ["+p.st+"]").join("\n"),
-contact:()=>"Email: "+CFG.email+"\nLinkedIn: "+CFG.linkedin+(CFG.github?"\nGitHub: github.com/"+CFG.github:""),
-theme:()=>{$("#theme").click();return"Theme switched."},clear:()=>{out.innerHTML="";return""}};
+const out=$("#out"),hist=[];
+let hi=0;
+
+const say=(t,h)=>{
+  const d=document.createElement("div");
+  h?d.innerHTML=t:d.textContent=t;
+  out.append(d);
+  out.scrollTop=out.scrollHeight;
+};
+
+const CMD={
+  help:()=>"Commands: about, skills, projects, contact, theme, clear",
+  about:()=>CFG.name+": 4th-year BS Computer Engineering student, ICCT Colleges Foundation Inc., Rizal. Interested in software engineering.",
+  skills:()=>[...new Set(SKILLS.map(s=>s.cat))]
+    .map(c=>c+": "+SKILLS.filter(s=>s.cat===c).map(s=>s.name).join(", "))
+    .join("\n"),
+  projects:()=>PROJECTS.map(p=>"- "+p.t+" ["+p.st+"]").join("\n"),
+  contact:()=>"Email: "+CFG.email+"\nLinkedIn: "+CFG.linkedin+(CFG.github?"\nGitHub: github.com/"+CFG.github:""),
+  theme:()=>{
+    $("#theme").click();
+    return "Theme switched.";
+  },
+  clear:()=>{
+    out.innerHTML="";
+    return "";
+  }
+};
+
 say("Welcome. Type <b>help</b> to see what I can do.",1);
-$("#tf").onsubmit=e=>{e.preventDefault();const v=$("#ti").value.trim().toLowerCase();$("#ti").value="";if(!v)return;hist.push(v);hi=hist.length;say("$ "+v);
-if(CMD[v]){const r=CMD[v]();if(r)say(r)}else say("command not found: "+v+". Try 'help'.")};
-$("#ti").onkeydown=e=>{if(e.key==="ArrowUp"&&hi>0)$("#ti").value=hist[--hi];if(e.key==="ArrowDown")$("#ti").value=hist[++hi]||""};
+
+$("#tf").onsubmit=e=>{
+  e.preventDefault();
+  const v=$("#ti").value.trim().toLowerCase();
+  $("#ti").value="";
+  if(!v)return;
+  hist.push(v);
+  hi=hist.length;
+  say("$ "+v);
+  if(CMD[v]){
+    const r=CMD[v]();
+    if(r)say(r);
+  }else{
+    say("command not found: "+v+". Try 'help'.");
+  }
+};
+
+$("#ti").onkeydown=e=>{
+  if(e.key==="ArrowUp"&&hi>0)$("#ti").value=hist[--hi];
+  if(e.key==="ArrowDown")$("#ti").value=hist[++hi]||"";
+};
+
 /* scroll: progress, active nav, reveal */
-const prog=$("#prog");addEventListener("scroll",()=>{const h=document.documentElement;prog.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight||1))*100+"%"},{passive:true});
+const prog=$("#prog");
+
+addEventListener("scroll",()=>{
+  const h=document.documentElement;
+  prog.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight||1))*100+"%";
+},{passive:true});
+
 const links=$$("#links a"),secs=links.map(a=>$(a.getAttribute("href")));
-new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting)links.forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+en.target.id))}),{rootMargin:"-45% 0px -50% 0px"}).observe&&secs.forEach(s=>new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting)links.forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+en.target.id))}),{rootMargin:"-45% 0px -50% 0px"}).observe(s));
-const rvo=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add("in");rvo.unobserve(en.target)}}),{threshold:.08});$$(".rv").forEach(e=>rvo.observe(e));
+
+new IntersectionObserver(es=>es.forEach(en=>{
+  if(en.isIntersecting){
+    links.forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+en.target.id));
+  }
+}),{rootMargin:"-45% 0px -50% 0px"}).observe&&secs.forEach(s=>
+  new IntersectionObserver(es=>es.forEach(en=>{
+    if(en.isIntersecting){
+      links.forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+en.target.id));
+    }
+  }),{rootMargin:"-45% 0px -50% 0px"}).observe(s)
+);
+
+const rvo=new IntersectionObserver(es=>es.forEach(en=>{
+  if(en.isIntersecting){
+    en.target.classList.add("in");
+    rvo.unobserve(en.target);
+  }
+}),{threshold:.08});
+
+$$(".rv").forEach(e=>rvo.observe(e));
+
 /* custom 404 via hash */
-function route(){const h=location.hash.slice(1);document.body.classList.toggle("is404",!!h&&!document.getElementById(h))}
-addEventListener("hashchange",route);route();
+function route(){
+  const h=location.hash.slice(1);
+  document.body.classList.toggle("is404",!!h&&!document.getElementById(h));
+}
+
+addEventListener("hashchange",route);
+route();
+
 /* cursor (desktop, fine pointer only) */
-if(matchMedia("(pointer:fine)").matches&&!reduce){const c=$("#cur");addEventListener("pointermove",e=>{c.style.opacity=1;c.style.left=e.clientX+"px";c.style.top=e.clientY+"px";c.classList.toggle("big",!!e.target.closest("a,button,.chip"))},{passive:true})}
+if(matchMedia("(pointer:fine)").matches&&!reduce){
+  const c=$("#cur");
+  addEventListener("pointermove",e=>{
+    c.style.opacity=1;
+    c.style.left=e.clientX+"px";
+    c.style.top=e.clientY+"px";
+    c.classList.toggle("big",!!e.target.closest("a,button,.chip"));
+  },{passive:true});
+}
+
 /* circuit background */
-(()=>{const cv=$("#bg"),x=cv.getContext("2d");let W,H,N=[];const mouse={x:-999,y:-999};
-const col=()=>getComputedStyle(root).getPropertyValue("--cyan").trim()||"#22d3ee";
-function size(){W=cv.width=innerWidth;H=cv.height=innerHeight;const n=Math.min(70,Math.floor(W*H/22000));N=Array.from({length:n},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.25,vy:(Math.random()-.5)*.25}))}
-function draw(){x.clearRect(0,0,W,H);const c=col();x.strokeStyle=c;x.fillStyle=c;
-for(let i=0;i<N.length;i++){const a=N[i];if(!reduce){a.x=(a.x+a.vx+W)%W;a.y=(a.y+a.vy+H)%H}
-x.globalAlpha=.5;x.fillRect(a.x-1.5,a.y-1.5,3,3);
-for(let j=i+1;j<N.length;j++){const b=N[j],dx=a.x-b.x,dy=a.y-b.y,d=dx*dx+dy*dy;if(d<19000){x.globalAlpha=.16*(1-d/19000);x.beginPath();x.moveTo(a.x,a.y);x.lineTo(b.x,a.y);x.lineTo(b.x,b.y);x.stroke()}}}
-if(!reduce)requestAnimationFrame(draw)}
-size();draw();addEventListener("resize",()=>{size();if(reduce)draw()});new MutationObserver(()=>{if(reduce)draw()}).observe(root,{attributes:true})})();
+(()=>{
+  const cv=$("#bg"),x=cv.getContext("2d");
+  let W,H,N=[];
+  const mouse={x:-999,y:-999};
+  const col=()=>getComputedStyle(root).getPropertyValue("--cyan").trim()||"#22d3ee";
+
+  function size(){
+    W=cv.width=innerWidth;
+    H=cv.height=innerHeight;
+    const n=Math.min(70,Math.floor(W*H/22000));
+    N=Array.from({length:n},()=>({
+      x:Math.random()*W,
+      y:Math.random()*H,
+      vx:(Math.random()-.5)*.25,
+      vy:(Math.random()-.5)*.25
+    }));
+  }
+
+  function draw(){
+    x.clearRect(0,0,W,H);
+    const c=col();
+    x.strokeStyle=c;
+    x.fillStyle=c;
+
+    for(let i=0;i<N.length;i++){
+      const a=N[i];
+      if(!reduce){
+        a.x=(a.x+a.vx+W)%W;
+        a.y=(a.y+a.vy+H)%H;
+      }
+      x.globalAlpha=.5;
+      x.fillRect(a.x-1.5,a.y-1.5,3,3);
+
+      for(let j=i+1;j<N.length;j++){
+        const b=N[j],dx=a.x-b.x,dy=a.y-b.y,d=dx*dx+dy*dy;
+        if(d<19000){
+          x.globalAlpha=.16*(1-d/19000);
+          x.beginPath();
+          x.moveTo(a.x,a.y);
+          x.lineTo(b.x,a.y);
+          x.lineTo(b.x,b.y);
+          x.stroke();
+        }
+      }
+    }
+
+    if(!reduce)requestAnimationFrame(draw);
+  }
+
+  size();
+  draw();
+  addEventListener("resize",()=>{
+    size();
+    if(reduce)draw();
+  });
+  new MutationObserver(()=>{
+    if(reduce)draw();
+  }).observe(root,{attributes:true});
+})();
 </script>
 </body>
 </html>
