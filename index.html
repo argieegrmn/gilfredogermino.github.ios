@@ -563,6 +563,7 @@ function renderContact(){
   <div><b>✉</b> <a href="mailto:${encodeURIComponent(C.email)}">${escapeHTML(C.email)}</a></div>
   <div><b>⌖</b> ${escapeHTML(C.location)}</div>
   <div><b>◎</b> ${escapeHTML(C.name)}</div>
+  <div><b>☎</b> ${escapeHTML(C.Phone)}</div>
   ${C.github?`<div><b>⌘</b>${linkHTML(C.github,"GitHub Profile")}</div>`:""}
   ${C.linkedin?`<div><b>in</b>${linkHTML(C.linkedin,"LinkedIn Profile")}</div>`:""}
  `;
