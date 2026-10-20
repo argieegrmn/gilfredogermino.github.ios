@@ -374,7 +374,7 @@ const PORTFOLIO_CONFIG = {
  
 {
   title: "SmartPoint Glasses",
-  category: "Embedded Systems",
+  category: "Hardware",
   status: "In Development",
   description: "A low-cost smart assistive eyeglasses system designed for individuals with severe mobility impairments. The wearable device uses embedded systems and sensors to provide hands-free cursor control, emergency SMS alerts, offline voice commands, vital signs monitoring, and smart reminders.",
   technologies: [
@@ -400,6 +400,33 @@ const PORTFOLIO_CONFIG = {
   demo: ""
 },
 
+{
+  title: "MetroSure",
+  category: "Hardware",
+  status: "In Development",
+  description: "MetroSure: Design and Development of an Automated Measurement and Tracking System. A hardware and software integrated solution designed to automate aluminum material measurement and counting while monitoring operator performance in small fabrication workshops. The system combines physical sensors, electronic components, and software-based tracking to improve measurement accuracy, reduce human error, minimize material waste, and enhance production efficiency.",
+  technologies: [
+    "Hardware & Software Integration",
+    "Microcontroller",
+    "Rotary Encoder",
+    "Sensors",
+    "Automation",
+    "Data Management"
+  ],
+  features: [
+    "Automated Aluminum Length Measurement",
+    "Real-Time Material Counting",
+    "Operator Performance Tracking",
+    "Measurement Data Recording",
+    "Production Monitoring",
+    "Material Waste Reduction",
+    "Hardware and Software Integration"
+  ],
+  image: "MetroSure.jpg",
+  github: "",
+  demo: ""
+},
+
   {
    title:"Contest Drive",
    category:"Mobile App",
@@ -411,17 +438,7 @@ const PORTFOLIO_CONFIG = {
    github:"",
    demo:""
   },
-  {
-   title:"TaraNa! — Rizal Tourism Guide",
-   category:"Academic",
-   status:"Concept",
-   description:"A tourism application concept to help users discover tourist attractions and cultural heritage destinations in Rizal.",
-   technologies:["Java","Swing","SQL"],
-   features:["Tourist destination directory","Heritage information","Destination browsing","Travel planning concept"],
-   image:"",
-   github:"",
-   demo:""
-  },
+
 
  ],
  education:[
@@ -700,7 +717,7 @@ function setupInteractions(){
 initializeIdentity();
 renderAbout();
 setupFilters("skillFilters",["All","Programming","Frontend","Mobile","Backend","Tools"],renderSkills);
-setupFilters("projectFilters",["All","Mobile App","Web App","Embedded Systems","Academic"],renderProjects);
+setupFilters("projectFilters",["All","Mobile App","Web App","Hardware","Academic"],renderProjects);
 renderSkills();
 renderProjects();
 renderEducation();
